@@ -1,15 +1,12 @@
 {
   "name": "ReactNativeReduxFormApp",
   "version": "0.0.1",
-  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "eject": "expo eject"
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios"
   },
   "dependencies": {
-    "expo": "^32.0.0",
     "moment": "^2.17.1",
     "mv": "^2.1.1",
     "react": "16.5.0",
@@ -31,7 +28,7 @@
     "babel-preset-react-native": "1.9.1",
     "eslint": "^3.14.1",
     "eslint-plugin-react": "^6.9.0",
-    "jest": "18.1.0",
+    "jest": "^24.5.0",
     "react-test-renderer": "~15.4.0-rc.4"
   },
   "jest": {
