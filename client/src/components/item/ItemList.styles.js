@@ -3,13 +3,13 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
 
     header: {
-        marginTop: 20,
+        marginTop: 22,
         backgroundColor: '#181f49',
         height: 130
     },
 
     headerTitle: {
-    fontSize: 40,
+    fontSize: 42,
     color: '#fff'
     },
 
@@ -27,16 +27,24 @@ export default StyleSheet.create({
     },
 
     rowText: {
-        flex:1
+        flex:1,
+        fontSize: 20,
+        color: '#181f49',
     },
 
     rowBtn: {
-        backgroundColor: '#ab3a4a'
+        backgroundColor: '#ab3a4a',
+        margin: -8,
+        padding: 10
+    },
+
+    addBtn: {
+        justifyContent : 'center',
+        alignItems:"center"
     },
 
     rowBadge: {
         backgroundColor: '#1d2557',
-        color: '#f4f4f4'
     }
 
 });

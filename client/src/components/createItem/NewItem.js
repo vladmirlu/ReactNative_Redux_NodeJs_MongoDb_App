@@ -9,6 +9,7 @@ export default class NewItem extends Component {
         return {
             title: "Create new item",
             headerStyle: styles.header,
+            headerTintColor: '#fff',
             headerTitleStyle:styles.headerTitle
         };
     };

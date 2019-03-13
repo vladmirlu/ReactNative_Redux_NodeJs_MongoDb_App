@@ -11,7 +11,8 @@ export default class Item extends Component {
         return {
             title: navigation.state.params.item.title,
             headerStyle: styles.header,
-            headerTitleStyle:styles.headerTitle
+            headerTitleStyle:styles.headerTitle,
+            headerTintColor: '#fff'
         };
     };
 

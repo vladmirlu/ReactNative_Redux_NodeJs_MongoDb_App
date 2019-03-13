@@ -39,7 +39,7 @@ export default class ItemList extends Component{
         return(
             <TouchableHighlight onPress={() => {this.goToItem(item)}}>
             <View style={styles.row}>
-                <Badge value={item.comments.length} status="primary" badgeStyle={styles.badgeStyle}/>
+                <Badge value={item.comments.length} status="primary" badgeStyle={styles.rowBadge}/>
                 <Text style={styles.rowText}>  {item.title}</Text>
                 <Button
                     buttonStyle={styles.rowBtn}
@@ -59,8 +59,9 @@ export default class ItemList extends Component{
         />;
 
         return(
-            <View style={{justifyContent : 'center'}}>
+            <View>
                 {renderList}
+                <View style={styles.addBtn}>
                 <Icon
                     reverse
                     name='plus'
@@ -68,6 +69,7 @@ export default class ItemList extends Component{
                     color='#c5455e'
                     onPress={this.goToItemForm.bind(this)}
                />
+                </View>
             </View>
         );
     }

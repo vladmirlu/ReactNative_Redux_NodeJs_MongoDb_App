@@ -17,7 +17,7 @@ export default class Comments extends Component {
     renderRow(comment){
         return(
                 <View style={styles.row}>
-                    <Button buttonStyle={styles.rowBtn}/>
+                    <View style={styles.rowBtn}/>
                     <Text style={styles.rowText}>    {comment}</Text>
                 </View>
         )

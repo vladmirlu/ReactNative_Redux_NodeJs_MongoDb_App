@@ -1,14 +1,14 @@
 import { reduxForm, Field } from 'redux-form';
-import { ScrollView } from 'react-native';
+import { View } from 'react-native';
 import React from 'react'
+import {Icon} from "react-native-elements";
 
 import CommentInput from './CommentInput';
 import styles from './CommentForm.styles';
-import {Icon} from "react-native-elements";
 
 function CommentForm(props) {
     return (
-        <ScrollView style={styles.container} keyboardShouldPersistTaps={'handled'}>
+        <View style={styles.container} keyboardShouldPersistTaps={'handled'}>
             <Field
                 name={'comment'}
                 component={CommentInput}
@@ -21,7 +21,7 @@ function CommentForm(props) {
                 color='#283061'
                 onPress={props.handleSubmit}
             />
-        </ScrollView>
+        </View>
     );
 }
 

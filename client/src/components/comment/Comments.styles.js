@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
     row: {
         flexDirection:'row',
+        justifyContent: 'space-between',
         padding:10,
         backgroundColor: '#f4f4f4',
         marginBottom:3
@@ -12,6 +13,8 @@ export default StyleSheet.create({
         textAlign: 'right'
     },
     rowBtn:{
-        backgroundColor: '#2d366e'
+        backgroundColor: '#2d366e',
+        padding: 30,
+        margin: 10
     }
 });
