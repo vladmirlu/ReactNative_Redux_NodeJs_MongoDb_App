@@ -4,7 +4,7 @@ import React from 'react';
 
 import { AppNavigationState, store } from './src/redux/store'
 
-class Root extends React.Component {
+class App extends React.Component {
     render() {
         return (
             <Provider store={store}>
@@ -14,4 +14,4 @@ class Root extends React.Component {
     }
 }
 
-export default Root;
+export default App;
